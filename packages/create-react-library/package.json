@@ -1,0 +1,11 @@
+{
+  "name": "create-react-library",
+  "version": "0.1.0",
+  "main": "createReactLibrary",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "commander": "^2.14.1",
+    "react-library-scripts": "^0.1.0",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
