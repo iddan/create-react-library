@@ -9,7 +9,7 @@ const CWD = process.cwd();
 
 function createReactLibrary(name) {
   checkName(name);
-  const directory = path.join(CWD, name)
+  const directory = path.join(CWD, name);
   console.log(`\nCreating a new React library in ${directory}.\n`);
   init(name, directory);
 }

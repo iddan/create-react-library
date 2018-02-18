@@ -1,9 +1,9 @@
-const validateLibraryName = require('validate-npm-package-name');
-const chalk = require('chalk');
-const modules = require('react-library-scripts/modules.json')
+const validateLibraryName = require("validate-npm-package-name");
+const chalk = require("chalk");
+const modules = require("react-library-scripts/modules.json");
 
 function printValidationResults(results) {
-  if (typeof results !== 'undefined') {
+  if (typeof results !== "undefined") {
     for (const error of results) {
       console.error(chalk.red(`  *  ${error}`));
     }
@@ -12,7 +12,7 @@ function printValidationResults(results) {
 
 /**
  * Check if the created library's name is valid otherwise error and exit the process
- * @param {string} libraryName 
+ * @param {string} libraryName
  * @return {void}
  */
 module.exports = function checklibraryName(libraryName) {
@@ -27,7 +27,7 @@ module.exports = function checklibraryName(libraryName) {
     printValidationResults(validationResult.warnings);
     process.exit(1);
   }
-  const moduleNames = Object.values(modules)
+  const moduleNames = Object.values(modules);
   if (moduleNames.includes(libraryName)) {
     console.error(
       chalk.red(
@@ -36,9 +36,9 @@ module.exports = function checklibraryName(libraryName) {
         )} because a dependency with the same name exists.\n` +
           `Due to the way npm works, the following names are not allowed:\n\n`
       ) +
-        chalk.cyan(moduleNames.map(depName => `  ${depName}`).join('\n')) +
-        chalk.red('\n\nPlease choose a different library name.')
+        chalk.cyan(moduleNames.map(depName => `  ${depName}`).join("\n")) +
+        chalk.red("\n\nPlease choose a different library name.")
     );
     process.exit(1);
   }
-}
+};
