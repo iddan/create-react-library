@@ -1,32 +1,3 @@
 {
-  "files.exclude": {
-    "logs": "explorerExcludedFiles",
-    "*.log": "explorerExcludedFiles",
-    "npm-debug.log*": "explorerExcludedFiles",
-    "yarn-debug.log*": "explorerExcludedFiles",
-    "yarn-error.log*": "explorerExcludedFiles",
-    "pids": "explorerExcludedFiles",
-    "*.pid": "explorerExcludedFiles",
-    "*.seed": "explorerExcludedFiles",
-    "*.pid.lock": "explorerExcludedFiles",
-    "lib-cov": "explorerExcludedFiles",
-    "coverage": "explorerExcludedFiles",
-    ".nyc_output": "explorerExcludedFiles",
-    ".grunt": "explorerExcludedFiles",
-    "bower_components": "explorerExcludedFiles",
-    ".lock-wscript": "explorerExcludedFiles",
-    "build/Release": "explorerExcludedFiles",
-    "node_modules/": "explorerExcludedFiles",
-    "**/node_modules/**": "explorerExcludedFiles",
-    "jspm_packages/": "explorerExcludedFiles",
-    "flow-typed/": "explorerExcludedFiles",
-    "typings/": "explorerExcludedFiles",
-    ".npm": "explorerExcludedFiles",
-    ".eslintcache": "explorerExcludedFiles",
-    ".node_repl_history": "explorerExcludedFiles",
-    "*.tgz": "explorerExcludedFiles",
-    ".yarn-integrity": "explorerExcludedFiles",
-    ".env": "explorerExcludedFiles",
-    "dist/": "explorerExcludedFiles"
-  }
+  "eslint.enable": true
 }
