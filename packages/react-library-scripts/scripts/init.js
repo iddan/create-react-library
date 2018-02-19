@@ -19,6 +19,7 @@ async function initModules(name, directory) {
       start: "react-library-scripts start",
       build: "react-library-scripts build",
       test: "react-library-scripts test",
+      prepare: "react-library-scripts build",
       postinstall: "react-library-scripts postinstall"
     },
     ...modules
