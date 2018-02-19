@@ -1,5 +1,12 @@
 #!/usr/bin/env node
-const babelDir = require("@babel/cli/lib/babel/dir");
-const babelConfig = require("../config/babelrc.json");
+const path = require("path");
+const { loggedSpawn } = require("../util");
 
-babelDir({ outDir: "dist", copyFiles: true }, "src", babelConfig);
+loggedSpawn("yarn", [
+  "run",
+  "babel",
+  "src",
+  "--copy-files",
+  "--preset=react-app",
+  `--out-dir=${path.join(process.cwd(), "dist")}`
+]).catch(console.error);

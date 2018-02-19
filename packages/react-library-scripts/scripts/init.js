@@ -1,4 +1,4 @@
-const { mkdir, dumpJSONIn, dumpTextIn, loggedExec } = require("../util");
+const { mkdir, dumpJSONIn, dumpTextIn, loggedSpawn } = require("../util");
 const pkg = require("../package.json");
 const modules = require("../modules");
 
@@ -6,7 +6,7 @@ const { NODE_ENV } = process.env;
 
 async function initModules(name, directory) {
   if (NODE_ENV === "development") {
-    await loggedExec(`yarn link ${pkg.name}`, {
+    await loggedSpawn("yarn", ["link", pkg.name], {
       cwd: directory
     });
     delete modules.devDependencies[pkg.name];
@@ -26,12 +26,12 @@ async function initModules(name, directory) {
   });
   // install dependencies
   console.log("Installing dependencies");
-  await loggedExec("yarn", { cwd: directory });
+  await loggedSpawn("yarn", { cwd: directory });
 }
 
 async function initSourceControl(directory) {
   console.log("Initiating version control");
-  await loggedExec("git init", { cwd: directory });
+  await loggedSpawn("git", ["init"], { cwd: directory });
 }
 
 async function defineLinting(directory) {
@@ -43,11 +43,11 @@ async function defineLinting(directory) {
 }
 
 async function initDevelopmentEnvironment(directory) {
-  const getStorybook = () => loggedExec("getstorybook", { cwd: directory });
+  const getStorybook = () => loggedSpawn("getstorybook", { cwd: directory });
   try {
     await getStorybook();
   } catch (err) {
-    await loggedExec("yarn global add @storybook/cli");
+    await loggedSpawn("yarn", ["global", "add", "@storybook/cli"]);
     await getStorybook();
   }
 }
