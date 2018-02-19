@@ -2,7 +2,9 @@
   "name": "create-react-library",
   "version": "0.1.0",
   "main": "createReactLibrary",
+  "bin": "createReactLibrary",
   "dependencies": {
+    "array.prototype.flatmap": "^1.2.0",
     "chalk": "^2.3.0",
     "commander": "^2.14.1",
     "react-library-scripts": "^0.1.0",

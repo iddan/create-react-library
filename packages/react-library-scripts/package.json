@@ -1,4 +1,23 @@
 {
   "name": "react-library-scripts",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "bin": "./cli.js",
+  "homepage":
+    "https://github.com/iddan/create-react-library/blob/master/packages/react-library-scripts",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-react-app": "^3.1.1",
+    "eslint": "^4.1.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "flow-bin": "^0.66.0",
+    "jest": "^22.3.0",
+    "prettier": "^1.10.2",
+    "react-dev-utils": "^5.0.0"
+  }
 }
