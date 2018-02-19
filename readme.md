@@ -3,7 +3,7 @@
 Create React libraries with no configuration. Like [Create React App](https://github.com/facebook/create-react-app) but for libraries
 
 * [Creating a Library](#creaing-a-library)
-* [User Guide]((https://github.com/iddan/create-react-library/blob/master/packages/react-libarary-scripts/template/README.md)
+* [User Guide]
 
 Create React App works on macOS, Windows, and Linux.
 If something doesn’t work, please file an issue.
@@ -16,7 +16,7 @@ yarn create react-library $LIBRARY_NAME
 
 ## How to Update to New Versions?
 
-Please refer to the User Guide for this and other information.
+Please refer to the [User Guide] for this and other information.
 
 ## Philosophy
 
@@ -40,3 +40,5 @@ No Lock-In: You can “eject” to a custom setup at any time. Run a single comm
 * Formatting: [Prettier]
 * Development Environment: [Storybook]
 * Testing: [Jest]
+
+[user guide]: https://github.com/iddan/create-react-library/blob/master/packages/react-library-scripts/template/readme.md

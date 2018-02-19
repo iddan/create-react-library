@@ -1,8 +1,9 @@
 {
-  "name": "create-react-library",
-  "description": "Create React libraries with no configuration.",
   "version": "0.1.0",
-  "workspaces": ["packages/*"],
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "author": "Iddan Aaronsohn <mail@aniddan.com> (https://aniddan.com)",
   "homepage": "https://github.com/iddan/create-react-library",
   "license": "MIT",
@@ -17,6 +18,8 @@
   "bugs": {
     "url": "https://github.com/iddan/create-react-library/issues"
   },
+  "name": "create-react-library",
+  "description": "Create React libraries with no configuration.",
   "main": "createReactLibrary",
   "bin": "createReactLibrary",
   "dependencies": {

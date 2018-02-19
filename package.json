@@ -2,7 +2,7 @@
   "description": "Create React libraries with no configuration.",
   "keywords": ["react", "library", "boilerplate", "build", "configuration"],
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "workspaces": ["packages/*"],
   "author": "Iddan Aaronsohn <mail@aniddan.com> (https://aniddan.com)",
   "homepage": "https://github.com/iddan/create-react-library",

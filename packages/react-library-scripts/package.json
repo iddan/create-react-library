@@ -1,7 +1,6 @@
 {
-  "name": "react-library-scripts",
-  "description": "Configuration and scripts for Create React Library.",
   "version": "0.1.0",
+  "private": true,
   "workspaces": ["packages/*"],
   "author": "Iddan Aaronsohn <mail@aniddan.com> (https://aniddan.com)",
   "homepage":
@@ -18,8 +17,11 @@
   "bugs": {
     "url": "https://github.com/iddan/create-react-library/issues"
   },
+  "name": "react-library-scripts",
+  "description": "Configuration and scripts for Create React Library.",
   "bin": "./cli.js",
   "dependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
     "@babel/core": "^7.0.0-beta.40",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^7.2.3",
