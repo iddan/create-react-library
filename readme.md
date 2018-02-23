@@ -28,17 +28,17 @@ No Lock-In: You can “eject” to a custom setup at any time. Run a single comm
 
 ## What’s Included?
 
-* React, JSX, modern ECMAScript, and Flow syntax support.
-* A fast interactive unit test runner with built-in support for coverage reporting.
-* A live development environment server that warns about common mistakes.
-* Hassle-free updates for the above tools with a single dependency.
-
-### Libraries configured
-
-* Transpiling: [Babel]
+* React, JSX, modern ECMAScript, and Flow syntax support: [Babel]
 * Linting: [ESLint] & [Flow]
 * Formatting: [Prettier]
-* Development Environment: [Storybook]
-* Testing: [Jest]
+* A live development environment server that warns about common mistakes: [Storybook]
+* A fast interactive unit test runner with built-in support for coverage reporting: [Jest]
+* Hassle-free updates for the above tools with a single dependency.
 
 [user guide]: https://github.com/iddan/create-react-library/blob/master/packages/react-library-scripts/template/readme.md
+[babel]: https://babeljs.io
+[eslint]: https://eslint.org
+[flow]: https://flowtype.org
+[prettier]: https://prettier.io
+[storybook]: https://storybook.js.org
+[jest]: https://facebook.github.io/jest
